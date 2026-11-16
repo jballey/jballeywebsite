@@ -74,7 +74,7 @@ p, li, dd { max-width: var(--measure); }
   padding: var(--space-5);
   transition: border-color var(--duration-hover) var(--ease), box-shadow var(--duration-hover) var(--ease);
 }
-.card:hover { border-color: var(--color-border); box-shadow: var(--shadow-1); }
+a.card:hover, .card:has(a):hover { border-color: var(--color-border); box-shadow: var(--shadow-1); }
 .card h3 { font-size: var(--text-5); }
 .card dl { display: grid; gap: var(--space-2); font-size: var(--text-2); }
 .card dl div { display: grid; gap: var(--space-1); }
