@@ -46,6 +46,8 @@ p, li, dd { max-width: var(--measure); }
 .btn-ghost:active { background: var(--color-surface-sunken); }
 .btn:disabled, .btn[aria-disabled="true"] { background: var(--color-disabled-bg); color: var(--color-disabled-text); border-color: transparent; cursor: not-allowed; }
 .btn-row { display: flex; flex-wrap: wrap; gap: var(--space-3); }
+.btn-icon { min-width: var(--hit-min); padding-inline: var(--space-3); }
+.icon-linkedin { display: block; width: var(--space-6); height: var(--space-6); background-color: var(--color-linkedin); -webkit-mask: url(linkedin.svg) center / contain no-repeat; mask: url(linkedin.svg) center / contain no-repeat; }
 .btn-sm { min-height: var(--hit-min); padding-inline: var(--space-3); font-size: var(--text-2); }
 
 /* ---------- Component: Link ---------- */
