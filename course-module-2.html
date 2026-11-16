@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Headings and Structure | Accessible Learning Basics</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Mulish:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<div class="site">
+  <div class="wf"><div class="wf-inner">
+<header class="site-header">
+  <a class="brand" href="index.html">Jasmine Balley</a>
+  <nav class="site-nav" aria-label="Main">
+    <ul>
+      <li><a class="nav-link" href="index.html">Home</a></li>
+      <li><a class="nav-link" href="portfolio.html" aria-current="page">Portfolio</a></li>
+      <li><a class="nav-link" href="about.html">About</a></li>
+      <li><a class="nav-link" href="index.html#c-5">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+  <div class="course-page">
+    <div class="course-banner"><p class="course-code">ACCS 101 · Professional Development</p><p class="title">Accessible Learning Basics</p><dl class="course-meta"><div><dt>Module</dt><dd>2 of 6</dd></div><div><dt>Estimated Time</dt><dd>15 Minutes</dd></div><div><dt>Instructor</dt><dd>Jasmine Balley</dd></div></dl></div>
+    <nav class="course-nav" aria-label="Course"><ul>
+      <li><a class="nav-link" href="course.html">Course home</a></li><li><a class="nav-link" href="course.html#modules">Modules</a></li><li><a class="nav-link" href="course.html#announcements">Announcements</a></li>
+      <li class="course-back"><a class="btn btn-secondary btn-back" href="portfolio.html">Back to Portfolio</a></li>
+    </ul></nav>
+    <div class="lesson-cols">
+    <aside>
+      <nav class="modnav" aria-labelledby="modnav-h">
+        <h2 class="widget-title" id="modnav-h">Modules</h2>
+        <ol>
+          <li><a href="course-module-1.html" data-modlink="1"><span class="n">1</span><span class="title">Why Accessibility Matters</span><span class="status" data-status>Not started</span></a></li>
+          <li><a href="course-module-2.html" data-modlink="2" aria-current="page"><span class="n">2</span><span class="title">Headings and Structure</span><span class="status" data-status>Not started</span></a></li>
+          <li><a href="course-module-3.html" data-modlink="3"><span class="n">3</span><span class="title">Colour and Contrast</span><span class="status" data-status>Not started</span></a></li>
+          <li><a href="course-module-4.html" data-modlink="4"><span class="n">4</span><span class="title">Images and Alt Text</span><span class="status" data-status>Not started</span></a></li>
+          <li><a href="course-module-5.html" data-modlink="5"><span class="n">5</span><span class="title">Captions and Transcripts</span><span class="status" data-status>Not started</span></a></li>
+          <li><a href="course-module-6.html" data-modlink="6"><span class="n">6</span><span class="title">Check Your Work</span><span class="status" data-status>Not started</span></a></li>
+        </ol>
+      </nav>
+    </aside>
+    <main class="lesson" data-current-module="2">
+      <p class="eyebrow">Module 2 of 6</p>
+      <h1 class="page-title">Headings and Structure</h1>
+      <p class="lead">Clear structure lets every learner find their place, whether they scan with their eyes or with a screen reader.</p>
+<h2>Why Structure Matters</h2>
+<p>People who use screen readers often jump from heading to heading to find what they need. Sighted learners scan headings the same way. Real headings help both.</p>
+<h2>Four Habits</h2>
+<ul><li>Use one main heading per page, then go down one level at a time. Do not skip from level 1 to level 3.</li><li>Use the heading styles in your authoring tool. Large bold text looks like a heading but is not announced as one.</li><li>Use real bulleted and numbered lists, so the number of items is announced.</li><li>Write link text that makes sense on its own.</li></ul>
+<h2>Link Text, Before and After</h2>
+<dl class="pair"><div><dt>Instead of</dt><dd>Click here to get the checklist.</dd></div><div><dt>Write</dt><dd>Download the launch checklist.</dd></div></dl>
+      <form class="card check" novalidate data-answer="c" data-right="Correct. It says where the link goes, even out of context." data-wrong="Not quite. Out of context, that link says nothing about where it goes. Download the launch checklist does.">
+        <h2>Check Your Understanding</h2>
+        <fieldset>
+          <legend>Some learners listen to a list of every link on the page. Which link text is most useful to them?</legend>
+          <div class="choices">
+          <label class="choice"><input type="radio" name="check" value="a" id="m2-a"> Click here</label>
+          <label class="choice"><input type="radio" name="check" value="b" id="m2-b"> Read more</label>
+          <label class="choice"><input type="radio" name="check" value="c" id="m2-c"> Download the launch checklist</label>
+          </div>
+        </fieldset>
+        <div class="btn-row"><button class="btn btn-secondary" type="submit">Check my answer</button></div>
+        <p class="feedback" role="status"></p>
+      </form>
+      <nav class="pager" aria-label="Module pages">
+        <a class="link link-standalone" href="course-module-1.html">Previous: Why Accessibility Matters</a>
+        <a class="btn btn-primary" id="complete" href="course-module-3.html">Mark complete and continue</a>
+      </nav>
+    </main>
+    </div>
+  </div>
+  </div></div>
+</div>
+<script src="course.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Accessible Learning Basics | Sample Course</title>
+<meta name="description" content="Accessible Learning Basics, a sample online course designed by Jasmine Balley.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Mulish:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<div class="site">
+  <div class="wf"><div class="wf-inner">
+<header class="site-header">
+  <a class="brand" href="index.html">Jasmine Balley</a>
+  <nav class="site-nav" aria-label="Main">
+    <ul>
+      <li><a class="nav-link" href="index.html">Home</a></li>
+      <li><a class="nav-link" href="portfolio.html" aria-current="page">Portfolio</a></li>
+      <li><a class="nav-link" href="about.html">About</a></li>
+      <li><a class="nav-link" href="index.html#c-5">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+  <div class="course-page">
+    <div class="course-banner"><p class="course-code">ACCS 101 · Professional Development</p><p class="title">Accessible Learning Basics</p><dl class="course-meta"><div><dt>Format</dt><dd>Self-Paced, Online</dd></div><div><dt>Length</dt><dd>6 Modules, 85 Minutes</dd></div><div><dt>Instructor</dt><dd>Jasmine Balley</dd></div></dl></div>
+    <nav class="course-nav" aria-label="Course"><ul>
+      <li><a class="nav-link" href="course.html" aria-current="page">Course home</a></li><li><a class="nav-link" href="course.html#modules">Modules</a></li><li><a class="nav-link" href="course.html#announcements">Announcements</a></li>
+      <li class="course-back"><a class="btn btn-secondary btn-back" href="portfolio.html">Back to Portfolio</a></li>
+    </ul></nav>
+    <main class="course-page">
+      <section class="card welcome" aria-labelledby="welcome-h">
+        <div class="body">
+          <h1 class="t" id="welcome-h">Welcome</h1>
+          <p class="muted" id="welcome-text">Six short modules on building training that everyone can use. Each one takes 15 to 20 minutes and ends with a short check.</p>
+          <div class="btn-row"><a class="btn btn-primary" id="resume" href="course-module-1.html">Start module 1</a></div>
+        </div>
+        <div class="body">
+          <h2 class="widget-title">Your Progress</h2>
+          <progress id="progress-bar" value="0" max="6" aria-label="Course progress">0 of 6</progress>
+          <p class="small" id="progress-text">0 of 6 modules complete</p>
+        </div>
+      </section>
+
+      <h2 class="sr-only" id="modules-h">Modules</h2>
+      <ol class="tiles" id="modules" aria-labelledby="modules-h">
+        <li class="card tile" data-module="1">
+          <svg class="cover" viewBox="0 0 320 240" aria-hidden="true" focusable="false"><rect class="cv-bg house-clarity" width="320" height="240"/> 
+  <circle class="cv-ink" cx="92" cy="120" r="14"/><path class="cv-ink" d="M68 162 a24 24 0 0 1 48 0 v34 h-48 Z"/><circle class="cv-ink" cx="160" cy="112" r="14"/><path class="cv-ink" d="M136 154 a24 24 0 0 1 48 0 v34 h-48 Z"/>
+  <circle class="cv-ink" cx="226" cy="118" r="14"/><path class="cv-ink" d="M208 170 v-22 a18 18 0 0 1 36 0 v22 Z"/>
+  <path class="cv-line" d="M202 138 V172 H244 V198 H258" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle class="cv-line" cx="218" cy="198" r="24" stroke-width="6"/><circle class="cv-ink" cx="218" cy="198" r="4"/>
+  <path class="cv-surface" d="M160 86 c-10 -20 -40 -14 -40 8 c0 20 40 38 40 38 c0 0 40 -18 40 -38 c0 -22 -30 -28 -40 -8 Z" transform="translate(0 -40) scale(1)"/>
+  <rect class="cv-gold" x="264" y="44" width="12" height="12" transform="rotate(45 270 50)"/><rect class="cv-gold" x="46" y="56" width="8" height="8" transform="rotate(45 50 60)"/></svg>
+          <p class="tile-meta">Module 1 · 10 min</p>
+          <a class="tile-link" href="course-module-1.html">Why Accessibility Matters</a>
+          <span class="badge" data-status>Not started</span>
+        </li>
+        <li class="card tile" data-module="2">
+          <svg class="cover" viewBox="0 0 320 240" aria-hidden="true" focusable="false"><rect class="cv-bg house-change" width="320" height="240"/>
+  <rect class="cv-surface" x="86" y="30" width="148" height="182" rx="8"/>
+  <text class="cv-tag" x="104" y="68">H1</text><rect class="cv-ink" x="144" y="52" width="74" height="16" rx="4"/>
+  <text class="cv-tag-s" x="114" y="104">H2</text><rect class="cv-muted" x="146" y="92" width="62" height="12" rx="3"/>
+  <rect class="cv-faint" x="146" y="112" width="70" height="7" rx="3"/><rect class="cv-faint" x="146" y="125" width="56" height="7" rx="3"/>
+  <text class="cv-tag-s" x="114" y="160">H2</text><rect class="cv-muted" x="146" y="148" width="54" height="12" rx="3"/>
+  <rect class="cv-faint" x="146" y="168" width="70" height="7" rx="3"/><rect class="cv-faint" x="146" y="181" width="48" height="7" rx="3"/>
+  <rect class="cv-gold" x="262" y="46" width="12" height="12" transform="rotate(45 268 52)"/><rect class="cv-gold" x="42" y="186" width="8" height="8" transform="rotate(45 46 190)"/></svg>
+          <p class="tile-meta">Module 2 · 15 min</p>
+          <a class="tile-link" href="course-module-2.html">Headings and Structure</a>
+          <span class="badge" data-status>Not started</span>
+        </li>
+        <li class="card tile" data-module="3">
+          <svg class="cover" viewBox="0 0 320 240" aria-hidden="true" focusable="false"><rect class="cv-bg house-mentorship" width="320" height="240"/>
+  <rect class="cv-surface" x="40" y="58" width="112" height="112" rx="10"/><text class="cv-big" x="96" y="132" text-anchor="middle">Aa</text>
+  <rect class="cv-surface" x="168" y="58" width="112" height="112" rx="10"/><text class="cv-big cv-faint-t" x="224" y="132" text-anchor="middle">Aa</text>
+  <circle class="cv-ok" cx="96" cy="196" r="16"/><path class="cv-line-light" d="M88 196 l6 6 l11 -13" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle class="cv-surface" cx="224" cy="196" r="16"/><path class="cv-line" d="M217 189 l14 14 M231 189 l-14 14" stroke-width="4" stroke-linecap="round"/>
+  <rect class="cv-gold" x="154" y="30" width="12" height="12" transform="rotate(45 160 36)"/></svg>
+          <p class="tile-meta">Module 3 · 15 min</p>
+          <a class="tile-link" href="course-module-3.html">Colour and Contrast</a>
+          <span class="badge" data-status>Not started</span>
+        </li>
+        <li class="card tile" data-module="4">
+          <svg class="cover" viewBox="0 0 320 240" aria-hidden="true" focusable="false"><rect class="cv-bg house-evidence" width="320" height="240"/>
+  <rect class="cv-surface" x="56" y="40" width="160" height="120" rx="8"/>
+  <circle class="cv-ink" cx="96" cy="78" r="12"/>
+  <path class="cv-ink" d="M66 150 l44 -46 l30 30 l22 -20 l44 36 Z"/>
+  <path class="cv-surface cv-stroke" d="M168 150 h96 l12 22 l-12 22 h-96 Z" stroke-width="4" stroke-linejoin="round"/>
+  <circle class="cv-ink" cx="184" cy="172" r="5"/><text class="cv-tag-s" x="198" y="180">alt</text>
+  <rect class="cv-gold" x="264" y="50" width="12" height="12" transform="rotate(45 270 56)"/><rect class="cv-gold" x="36" y="196" width="8" height="8" transform="rotate(45 40 200)"/></svg>
+          <p class="tile-meta">Module 4 · 10 min</p>
+          <a class="tile-link" href="course-module-4.html">Images and Alt Text</a>
+          <span class="badge" data-status>Not started</span>
+        </li>
+        <li class="card tile" data-module="5">
+          <svg class="cover" viewBox="0 0 320 240" aria-hidden="true" focusable="false"><rect class="cv-bg house-clarity" width="320" height="240"/>
+  <rect class="cv-surface" x="40" y="34" width="240" height="150" rx="10"/>
+  <path class="cv-ink" d="M146 76 l36 22 l-36 22 Z"/>
+  <rect class="cv-ink" x="62" y="140" width="196" height="28" rx="4"/>
+  <rect class="cv-light" x="74" y="149" width="112" height="5" rx="2.5"/><rect class="cv-light" x="74" y="158" width="72" height="5" rx="2.5"/>
+  <text class="cv-cc" x="236" y="161" text-anchor="middle">CC</text>
+  <rect class="cv-surface" x="40" y="196" width="240" height="8" rx="4"/><rect class="cv-gold" x="40" y="196" width="96" height="8" rx="4"/>
+  <rect class="cv-gold" x="281" y="25" width="10" height="10" transform="rotate(45 286 30)"/></svg>
+          <p class="tile-meta">Module 5 · 15 min</p>
+          <a class="tile-link" href="course-module-5.html">Captions and Transcripts</a>
+          <span class="badge" data-status>Not started</span>
+        </li>
+        <li class="card tile" data-module="6">
+          <svg class="cover" viewBox="0 0 320 240" aria-hidden="true" focusable="false"><rect class="cv-bg house-change" width="320" height="240"/>
+  <rect class="cv-surface" x="70" y="34" width="150" height="180" rx="8"/>
+  <rect class="cv-gold" x="118" y="24" width="54" height="20" rx="5"/>
+  <rect class="cv-box" x="88" y="62" width="22" height="22" rx="4"/><rect class="cv-muted" x="120" y="69" width="80" height="9" rx="4"/><path class="cv-line" d="M93 73 l5 6 l9 -11" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><rect class="cv-box" x="88" y="100" width="22" height="22" rx="4"/><rect class="cv-muted" x="120" y="107" width="64" height="9" rx="4"/><path class="cv-line" d="M93 111 l5 6 l9 -11" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><rect class="cv-box" x="88" y="138" width="22" height="22" rx="4"/><rect class="cv-muted" x="120" y="145" width="76" height="9" rx="4"/><path class="cv-line" d="M93 149 l5 6 l9 -11" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><rect class="cv-box" x="88" y="176" width="22" height="22" rx="4"/><rect class="cv-muted" x="120" y="183" width="54" height="9" rx="4"/>
+  <circle class="cv-line-surface" cx="232" cy="164" r="30" stroke-width="10"/><path class="cv-line-surface" d="M254 186 l26 26" stroke-width="12" stroke-linecap="round"/>
+  <rect class="cv-gold" x="41" y="47" width="10" height="10" transform="rotate(45 46 52)"/></svg>
+          <p class="tile-meta">Module 6 · 20 min</p>
+          <a class="tile-link" href="course-module-6.html">Check Your Work</a>
+          <span class="badge" data-status>Not started</span>
+        </li>
+      </ol>
+
+      <section class="card" id="announcements" aria-labelledby="news-h">
+        <h2 class="widget-title" id="news-h">Announcements</h2>
+        <ul class="news">
+          <li><p class="label">Welcome to Accessible Learning Basics</p><p class="muted small">Start with module 1. Each module ends with a short check, so you can see what stuck.</p></li>
+          <li><p class="label">A checklist to keep</p><p class="muted small">Module 6 ends with a launch checklist you can reuse for every module you build.</p></li>
+        </ul>
+      </section>
+
+      <div class="course-foot">
+        <p class="muted small" id="progress-note" role="status">Your progress is saved in this browser only.</p>
+        <button class="btn btn-ghost" type="button" id="reset">Reset my progress</button>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>This course and its content were created by Jasmine Balley as a portfolio sample.</p>
+      <ul><li><a class="link link-standalone" href="portfolio.html">Back to the portfolio</a></li></ul>
+    </footer>
+  </div>
+  </div></div>
+</div>
+<script src="course.js"></script>
+</body>
+</html>

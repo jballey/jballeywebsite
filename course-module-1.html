@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Why Accessibility Matters | Accessible Learning Basics</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Mulish:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<div class="site">
+  <div class="wf"><div class="wf-inner">
+<header class="site-header">
+  <a class="brand" href="index.html">Jasmine Balley</a>
+  <nav class="site-nav" aria-label="Main">
+    <ul>
+      <li><a class="nav-link" href="index.html">Home</a></li>
+      <li><a class="nav-link" href="portfolio.html" aria-current="page">Portfolio</a></li>
+      <li><a class="nav-link" href="about.html">About</a></li>
+      <li><a class="nav-link" href="index.html#c-5">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+  <div class="course-page">
+    <div class="course-banner"><p class="course-code">ACCS 101 · Professional Development</p><p class="title">Accessible Learning Basics</p><dl class="course-meta"><div><dt>Module</dt><dd>1 of 6</dd></div><div><dt>Estimated Time</dt><dd>10 Minutes</dd></div><div><dt>Instructor</dt><dd>Jasmine Balley</dd></div></dl></div>
+    <nav class="course-nav" aria-label="Course"><ul>
+      <li><a class="nav-link" href="course.html">Course home</a></li><li><a class="nav-link" href="course.html#modules">Modules</a></li><li><a class="nav-link" href="course.html#announcements">Announcements</a></li>
+      <li class="course-back"><a class="btn btn-secondary btn-back" href="portfolio.html">Back to Portfolio</a></li>
+    </ul></nav>
+    <div class="lesson-cols">
+    <aside>
+      <nav class="modnav" aria-labelledby="modnav-h">
+        <h2 class="widget-title" id="modnav-h">Modules</h2>
+        <ol>
+          <li><a href="course-module-1.html" data-modlink="1" aria-current="page"><span class="n">1</span><span class="title">Why Accessibility Matters</span><span class="status" data-status>Not started</span></a></li>
+          <li><a href="course-module-2.html" data-modlink="2"><span class="n">2</span><span class="title">Headings and Structure</span><span class="status" data-status>Not started</span></a></li>
+          <li><a href="course-module-3.html" data-modlink="3"><span class="n">3</span><span class="title">Colour and Contrast</span><span class="status" data-status>Not started</span></a></li>
+          <li><a href="course-module-4.html" data-modlink="4"><span class="n">4</span><span class="title">Images and Alt Text</span><span class="status" data-status>Not started</span></a></li>
+          <li><a href="course-module-5.html" data-modlink="5"><span class="n">5</span><span class="title">Captions and Transcripts</span><span class="status" data-status>Not started</span></a></li>
+          <li><a href="course-module-6.html" data-modlink="6"><span class="n">6</span><span class="title">Check Your Work</span><span class="status" data-status>Not started</span></a></li>
+        </ol>
+      </nav>
+    </aside>
+    <main class="lesson" data-current-module="1">
+      <p class="eyebrow">Module 1 of 6</p>
+      <h1 class="page-title">Why Accessibility Matters</h1>
+      <p class="lead">Accessible design ensures that training reaches every learner, including those whose needs were not anticipated during development.</p>
+<h2>Who Benefits</h2>
+<p>In Canada, 27% of people aged 15 and older have one or more disabilities. That is 8 million people, and some of them are your learners.</p>
+<p>Accessibility also helps people in temporary and everyday situations:</p>
+<ul><li>A learner with low vision who enlarges the text</li><li>A learner with a broken wrist who uses only the keyboard this month</li><li>A learner on a loud train who reads captions instead of listening</li></ul>
+<h2>What Ontario Requires</h2>
+<p>Under the Accessibility for Ontarians with Disabilities Act (AODA), public sector organizations, and businesses and non-profits with 50 or more employees, must make their public websites and web content meet WCAG 2.0 Level AA.</p>
+<p>WCAG stands for Web Content Accessibility Guidelines. The rest of this course covers the parts that matter most when you build training.</p>
+<h2>Four Questions to Ask</h2>
+<ul><li>Can everyone perceive it, by sight, sound or touch?</li><li>Can everyone operate it, with a mouse, a keyboard or a touch screen?</li><li>Can everyone understand it, through plain language and a predictable layout?</li><li>Does it work with assistive technology, such as screen readers?</li></ul>
+<p class="sources">Sources: <a class="link" href="https://www150.statcan.gc.ca/n1/daily-quotidien/231201/dq231201b-eng.htm" target="_blank" rel="noopener">Statistics Canada, Canadian Survey on Disability, 2022</a> and <a class="link" href="https://ontario.ca/page/how-make-websites-accessible" target="_blank" rel="noopener">Ontario, How to make websites accessible</a>.</p>
+      <form class="card check" novalidate data-answer="a" data-right="Correct. Captions let them follow the video without sound." data-wrong="Not quite. Without headphones, more sound will not help. Captions let them follow along.">
+        <h2>Check Your Understanding</h2>
+        <fieldset>
+          <legend>A learner watches your training video on a loud train with no headphones. What helps them most?</legend>
+          <div class="choices">
+          <label class="choice"><input type="radio" name="check" value="a" id="m1-a"> Captions</label>
+          <label class="choice"><input type="radio" name="check" value="b" id="m1-b"> A louder soundtrack</label>
+          <label class="choice"><input type="radio" name="check" value="c" id="m1-c"> A longer video</label>
+          </div>
+        </fieldset>
+        <div class="btn-row"><button class="btn btn-secondary" type="submit">Check my answer</button></div>
+        <p class="feedback" role="status"></p>
+      </form>
+      <nav class="pager" aria-label="Module pages">
+        <a class="link link-standalone" href="course.html">Back to course home</a>
+        <a class="btn btn-primary" id="complete" href="course-module-2.html">Mark complete and continue</a>
+      </nav>
+    </main>
+    </div>
+  </div>
+  </div></div>
+</div>
+<script src="course.js"></script>
+</body>
+</html>

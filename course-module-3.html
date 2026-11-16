@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Colour and Contrast | Accessible Learning Basics</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Mulish:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<div class="site">
+  <div class="wf"><div class="wf-inner">
+<header class="site-header">
+  <a class="brand" href="index.html">Jasmine Balley</a>
+  <nav class="site-nav" aria-label="Main">
+    <ul>
+      <li><a class="nav-link" href="index.html">Home</a></li>
+      <li><a class="nav-link" href="portfolio.html" aria-current="page">Portfolio</a></li>
+      <li><a class="nav-link" href="about.html">About</a></li>
+      <li><a class="nav-link" href="index.html#c-5">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+  <div class="course-page">
+    <div class="course-banner"><p class="course-code">ACCS 101 · Professional Development</p><p class="title">Accessible Learning Basics</p><dl class="course-meta"><div><dt>Module</dt><dd>3 of 6</dd></div><div><dt>Estimated Time</dt><dd>15 Minutes</dd></div><div><dt>Instructor</dt><dd>Jasmine Balley</dd></div></dl></div>
+    <nav class="course-nav" aria-label="Course"><ul>
+      <li><a class="nav-link" href="course.html">Course home</a></li><li><a class="nav-link" href="course.html#modules">Modules</a></li><li><a class="nav-link" href="course.html#announcements">Announcements</a></li>
+      <li class="course-back"><a class="btn btn-secondary btn-back" href="portfolio.html">Back to Portfolio</a></li>
+    </ul></nav>
+    <div class="lesson-cols">
+    <aside>
+      <nav class="modnav" aria-labelledby="modnav-h">
+        <h2 class="widget-title" id="modnav-h">Modules</h2>
+        <ol>
+          <li><a href="course-module-1.html" data-modlink="1"><span class="n">1</span><span class="title">Why Accessibility Matters</span><span class="status" data-status>Not started</span></a></li>
+          <li><a href="course-module-2.html" data-modlink="2"><span class="n">2</span><span class="title">Headings and Structure</span><span class="status" data-status>Not started</span></a></li>
+          <li><a href="course-module-3.html" data-modlink="3" aria-current="page"><span class="n">3</span><span class="title">Colour and Contrast</span><span class="status" data-status>Not started</span></a></li>
+          <li><a href="course-module-4.html" data-modlink="4"><span class="n">4</span><span class="title">Images and Alt Text</span><span class="status" data-status>Not started</span></a></li>
+          <li><a href="course-module-5.html" data-modlink="5"><span class="n">5</span><span class="title">Captions and Transcripts</span><span class="status" data-status>Not started</span></a></li>
+          <li><a href="course-module-6.html" data-modlink="6"><span class="n">6</span><span class="title">Check Your Work</span><span class="status" data-status>Not started</span></a></li>
+        </ol>
+      </nav>
+    </aside>
+    <main class="lesson" data-current-module="3">
+      <p class="eyebrow">Module 3 of 6</p>
+      <h1 class="page-title">Colour and Contrast</h1>
+      <p class="lead">If learners cannot tell your text from its background, nothing else in the module matters.</p>
+<h2>Contrast Ratio</h2>
+<p>Contrast ratio compares the brightness of text with its background. It runs from 1:1, which is no contrast, to 21:1, which is black on white. WCAG Level AA asks for:</p>
+<ul><li>At least 4.5:1 for regular text</li><li>At least 3:1 for large text, which means 18 point or larger, or 14 point bold or larger</li></ul>
+<h2>This Site's Colours, Tested</h2>
+<div class="table-wrap"><table class="table"><thead><tr><th scope="col">Colour on the page background</th><th scope="col">Ratio</th><th scope="col">Regular text</th><th scope="col">Large text</th></tr></thead><tbody><tr><th scope="row">Body text</th><td class="num">14.2:1</td><td>Pass</td><td>Pass</td></tr><tr><th scope="row">Muted text</th><td class="num">6.4:1</td><td>Pass</td><td>Pass</td></tr><tr><th scope="row">Green accent</th><td class="num">7.1:1</td><td>Pass</td><td>Pass</td></tr><tr><th scope="row">Gold ornament</th><td class="num">3.0:1</td><td>Fail</td><td>Pass</td></tr></tbody></table></div>
+<p>The gold fails for regular text, so this site uses it only for decoration and large numerals.</p>
+<h2>Do Not Rely on Colour Alone</h2>
+<p>Some learners cannot tell certain colours apart. When colour carries meaning, add a second signal:</p>
+<ul><li>Label quiz results with the words Correct or Not quite, as well as green or red</li><li>Mark required fields with the word required</li><li>Label the lines on a chart directly, as well as colouring them</li></ul>
+      <form class="card check" novalidate data-answer="a" data-right="Correct. Add words or icons so the result does not depend on colour." data-wrong="Not quite. Learners who cannot tell red from green would not be able to read their results.">
+        <h2>Check Your Understanding</h2>
+        <fieldset>
+          <legend>Your quiz marks wrong answers in red and right answers in green, with no other difference. What is the problem?</legend>
+          <div class="choices">
+          <label class="choice"><input type="radio" name="check" value="a" id="m3-a"> Learners who cannot tell red from green cannot read their results</label>
+          <label class="choice"><input type="radio" name="check" value="b" id="m3-b"> Red and green do not suit most brands</label>
+          <label class="choice"><input type="radio" name="check" value="c" id="m3-c"> There is no problem</label>
+          </div>
+        </fieldset>
+        <div class="btn-row"><button class="btn btn-secondary" type="submit">Check my answer</button></div>
+        <p class="feedback" role="status"></p>
+      </form>
+      <nav class="pager" aria-label="Module pages">
+        <a class="link link-standalone" href="course-module-2.html">Previous: Headings and Structure</a>
+        <a class="btn btn-primary" id="complete" href="course-module-4.html">Mark complete and continue</a>
+      </nav>
+    </main>
+    </div>
+  </div>
+  </div></div>
+</div>
+<script src="course.js"></script>
+</body>
+</html>

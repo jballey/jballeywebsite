@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Grading in Brightspace | Sample E-Learning Module</title>
+<meta name="description" content="Grading in Brightspace, a sample e-learning module designed by Jasmine Balley.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Mulish:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="module.css">
+</head>
+<body>
+<div class="site">
+  <div class="wf"><div class="wf-inner">
+<header class="site-header">
+  <a class="brand" href="index.html">Jasmine Balley</a>
+  <nav class="site-nav" aria-label="Main">
+    <ul>
+      <li><a class="nav-link" href="index.html">Home</a></li>
+      <li><a class="nav-link" href="portfolio.html" aria-current="page">Portfolio</a></li>
+      <li><a class="nav-link" href="about.html">About</a></li>
+      <li><a class="nav-link" href="index.html#c-5">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+  <div class="course-page">
+    <div class="course-banner module-banner"><p class="course-code">LMS 201 · Instructor Training</p><p class="title">Grading in Brightspace</p><dl class="course-meta"><div><dt>Audience</dt><dd>Instructors New to Brightspace</dd></div><div><dt>Format</dt><dd>Self-Paced, Online</dd></div><div><dt>Length</dt><dd>4 Lessons, 30 Minutes</dd></div><div><dt>Instructor</dt><dd>Jasmine Balley</dd></div></dl></div>
+    <div class="module-bar"><a class="btn btn-secondary btn-back" href="portfolio.html">Back to Portfolio</a></div>
+    <div class="lesson-cols">
+      <aside>
+        <nav class="modnav" aria-labelledby="mnav-h">
+          <h2 class="widget-title" id="mnav-h">Lessons</h2>
+          <ol>
+          <li><a href="#l1" data-lesson-link="1"><span class="n">1</span><span class="title">Grading Principles</span><span class="status" data-lesson-status>Not started</span></a></li>
+          <li><a href="#l2" data-lesson-link="2"><span class="n">2</span><span class="title">Inserting Rubrics</span><span class="status" data-lesson-status>Not started</span></a></li>
+          <li><a href="#l3" data-lesson-link="3"><span class="n">3</span><span class="title">Quizzes</span><span class="status" data-lesson-status>Not started</span></a></li>
+          <li><a href="#l4" data-lesson-link="4"><span class="n">4</span><span class="title">Grades</span><span class="status" data-lesson-status>Not started</span></a></li>
+          </ol>
+          <div class="mprog">
+            <progress id="m-progress" value="0" max="4" aria-label="Module progress">0 of 4</progress>
+            <p class="small" id="m-progress-text">0 of 4 lessons complete</p>
+          </div>
+        </nav>
+      </aside>
+      <main class="mmain">
+        <section class="mlesson mintro" aria-labelledby="intro-h">
+          <h1 class="page-title" id="intro-h">Grade with Confidence in Brightspace</h1>
+          <p class="lead">By the end of this module, you will be able to:</p>
+          <ul>
+            <li>Choose a grading system and final grade settings that match your course outline</li>
+            <li>Add a published rubric to an assignment</li>
+            <li>Find the quiz settings that control attempts, results and the grade book</li>
+            <li>Enter, check and release grades, including excused and missing work</li>
+          </ul>
+          <p class="small muted">Each lesson ends with a knowledge check. A lesson is marked complete when you answer its check correctly. Everything is on this one page, so you can scroll straight through or jump to a lesson from the list.</p>
+        </section>
+
+      <section class="mlesson" id="l1" aria-labelledby="l1-h">
+        <p class="eyebrow">Lesson 1 of 4 · About 8 minutes</p>
+        <h2 class="lesson-title" id="l1-h">Grading Principles</h2>
+        <p class="lead">Before you grade anything, decide how the course will add up. These choices are made once in the grade book setup and shape every grade that follows.</p>
+
+        <h3>Choose a Grading System</h3>
+        <p>Brightspace offers three grading systems. You pick one when you set up the grade book.</p>
+        <div class="table-wrap"><table class="table">
+          <thead><tr><th scope="col">System</th><th scope="col">How the final grade works</th><th scope="col">Use it when</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Weighted</th><td>Each category is worth a set percentage of the final grade, and the categories add up to 100%. Each item is weighted within its category.</td><td>Your course outline says things like "quizzes are worth 20%".</td></tr>
+            <tr><th scope="row">Points</th><td>Total points earned divided by total points possible. An item's maximum points set how much it counts.</td><td>Your course simply adds up points.</td></tr>
+            <tr><th scope="row">Formula</th><td>Points, plus a custom formula for special rules, such as a minimum score on the final exam.</td><td>You need rules the other two cannot express. It may not be turned on at every organization.</td></tr>
+          </tbody>
+        </table></div>
+
+        <h3>Try It: Same Scores, Two Systems</h3>
+        <p>Change the scores below. The learner's final grade is calculated both ways, so you can see why the choice matters.</p>
+        <div class="card calc">
+          <div class="calc-inputs">
+            <div class="field"><label for="s-quiz">Quiz score, out of 10</label><input class="input" type="number" id="s-quiz" min="0" max="10" value="8" inputmode="numeric"><p class="hint">Weighted: quizzes are 20% of the course</p></div>
+            <div class="field"><label for="s-asg">Assignment score, out of 50</label><input class="input" type="number" id="s-asg" min="0" max="50" value="45" inputmode="numeric"><p class="hint">Weighted: assignments are 30%</p></div>
+            <div class="field"><label for="s-exam">Exam score, out of 100</label><input class="input" type="number" id="s-exam" min="0" max="100" value="60" inputmode="numeric"><p class="hint">Weighted: the exam is 50%</p></div>
+          </div>
+          <dl class="calc-out" aria-live="polite">
+            <div><dt>Weighted final grade</dt><dd id="r-weighted">73.0%</dd></div>
+            <div><dt>Points final grade</dt><dd id="r-points">70.6%</dd></div>
+          </dl>
+          <p class="hint" id="r-note">Under Points, the 100-point exam pulls the grade down more, because it holds most of the points.</p>
+        </div>
+
+        <h3>Decide What the Learner Sees</h3>
+        <dl class="pair">
+          <div><dt>Calculated final grade</dt><dd>Brightspace works out the grade from the items and their weights or points.</dd></div>
+          <div><dt>Adjusted final grade</dt><dd>Starts from the calculated grade, but you can change it before you release it.</dd></div>
+        </dl>
+
+        <h3>Decide How to Treat Ungraded Work</h3>
+        <dl class="pair">
+          <div><dt>Drop ungraded items</dt><dd>Work without a score is left out, so the grade shows how the learner is doing on what has been graded so far.</dd></div>
+          <div><dt>Treat ungraded items as 0</dt><dd>Work without a score counts as zero, so the grade shows where the learner would land if nothing else came in.</dd></div>
+        </dl>
+
+        <form class="card check" novalidate data-lesson="1" data-answer="b" data-right="Correct. Drop ungraded items leaves unscored work out of the calculation." data-wrong="Not quite. That would count unmarked work against the learner. Drop ungraded items leaves it out.">
+          <h3 class="kc-title">Knowledge Check</h3>
+          <fieldset>
+            <legend>Midway through term, you want each learner's grade to reflect only the work you have already marked. Which setting fits?</legend>
+            <div class="choices">
+            <label class="choice"><input type="radio" name="kc-1" value="a" id="kc1-a"> Treat ungraded items as 0</label>
+            <label class="choice"><input type="radio" name="kc-1" value="b" id="kc1-b"> Drop ungraded items</label>
+            <label class="choice"><input type="radio" name="kc-1" value="c" id="kc1-c"> Adjusted final grade</label>
+            </div>
+          </fieldset>
+          <div class="btn-row"><button class="btn btn-secondary" type="submit">Check my answer</button></div>
+          <p class="feedback" role="status"></p>
+        </form>
+      </section>
+      <section class="mlesson" id="l2" aria-labelledby="l2-h">
+        <p class="eyebrow">Lesson 2 of 4 · About 8 minutes</p>
+        <h2 class="lesson-title" id="l2-h">Inserting Rubrics</h2>
+        <p class="lead">A rubric tells learners what good work looks like before they start, and keeps your marking consistent across every submission.</p>
+
+        <h3>Two Kinds of Rubric</h3>
+        <dl class="pair">
+          <div><dt>Analytic</dt><dd>Several criteria, each scored on its own, such as Argument, Evidence and Writing. Use it when you want to show learners exactly where they lost marks.</dd></div>
+          <div><dt>Holistic</dt><dd>One criterion that judges the work as a whole. Use it for quick, overall judgements, such as a pass or redo on a short reflection.</dd></div>
+        </dl>
+
+        <h3>Three Ways to Score</h3>
+        <ul>
+          <li><strong>No Score:</strong> levels with descriptions only. Good for feedback without a grade.</li>
+          <li><strong>Points:</strong> every criterion uses the same point values for each level.</li>
+          <li><strong>Custom Points:</strong> each criterion can carry different point values, so one criterion can count more than another.</li>
+        </ul>
+
+        <h3>Status Decides Whether You Can Use It</h3>
+        <div class="status-row">
+          <div class="card"><span class="badge">Draft</span><p class="small">Still being written. It cannot be added to new activities yet.</p></div>
+          <div class="card"><span class="badge badge-on">Published</span><p class="small">Ready. You can add it to assignments and other activities.</p></div>
+          <div class="card"><span class="badge">Archived</span><p class="small">Retired. It stays in past evaluations but cannot be added again.</p></div>
+        </div>
+
+        <h3>Try It: Put the Steps in Order</h3>
+        <p>These are the steps for adding an existing rubric to an assignment, but they are shuffled. Use the Move up and Move down buttons to put them in order, then check.</p>
+        <div class="card order" id="order">
+          <ol class="order-list" id="order-list">
+            <li data-step="4"><span class="order-text">Select "Add Rubric", then "Add Existing"</span><span class="order-btns"><button class="btn btn-ghost btn-sm" type="button" data-move="up">Move up</button><button class="btn btn-ghost btn-sm" type="button" data-move="down">Move down</button></span></li>
+            <li data-step="1"><span class="order-text">Open the Assignments tool</span><span class="order-btns"><button class="btn btn-ghost btn-sm" type="button" data-move="up">Move up</button><button class="btn btn-ghost btn-sm" type="button" data-move="down">Move down</button></span></li>
+            <li data-step="6"><span class="order-text">Select "Save and Close"</span><span class="order-btns"><button class="btn btn-ghost btn-sm" type="button" data-move="up">Move up</button><button class="btn btn-ghost btn-sm" type="button" data-move="down">Move down</button></span></li>
+            <li data-step="3"><span class="order-text">Expand "Evaluation &amp; Feedback"</span><span class="order-btns"><button class="btn btn-ghost btn-sm" type="button" data-move="up">Move up</button><button class="btn btn-ghost btn-sm" type="button" data-move="down">Move down</button></span></li>
+            <li data-step="2"><span class="order-text">Open the assignment's menu and choose "Edit Assignment"</span><span class="order-btns"><button class="btn btn-ghost btn-sm" type="button" data-move="up">Move up</button><button class="btn btn-ghost btn-sm" type="button" data-move="down">Move down</button></span></li>
+            <li data-step="5"><span class="order-text">Tick the rubric and select "Add Selected"</span><span class="order-btns"><button class="btn btn-ghost btn-sm" type="button" data-move="up">Move up</button><button class="btn btn-ghost btn-sm" type="button" data-move="down">Move down</button></span></li>
+          </ol>
+          <div class="btn-row"><button class="btn btn-secondary" type="button" id="order-check">Check the order</button></div>
+          <p class="feedback" id="order-feedback" role="status"></p>
+        </div>
+
+        <form class="card check" novalidate data-lesson="2" data-answer="a" data-right="Correct. Only Published rubrics can be added to activities." data-wrong="Not quite. Holistic rubrics and Custom Points both work. A rubric still in Draft cannot be added until you publish it.">
+          <h3 class="kc-title">Knowledge Check</h3>
+          <fieldset>
+            <legend>You built a rubric, but it does not appear when you try to add it to an assignment. What is the most likely reason?</legend>
+            <div class="choices">
+            <label class="choice"><input type="radio" name="kc-2" value="a" id="kc2-a"> It is still in Draft</label>
+            <label class="choice"><input type="radio" name="kc-2" value="b" id="kc2-b"> It is a holistic rubric</label>
+            <label class="choice"><input type="radio" name="kc-2" value="c" id="kc2-c"> It uses Custom Points</label>
+            </div>
+          </fieldset>
+          <div class="btn-row"><button class="btn btn-secondary" type="submit">Check my answer</button></div>
+          <p class="feedback" role="status"></p>
+        </form>
+      </section>
+      <section class="mlesson" id="l3" aria-labelledby="l3-h">
+        <p class="eyebrow">Lesson 3 of 4 · About 8 minutes</p>
+        <h2 class="lesson-title" id="l3-h">Quizzes</h2>
+        <p class="lead">A quiz can mark itself and send the score straight to the grade book. Most of the work is choosing the right settings before learners start.</p>
+
+        <h3>Build the Quiz</h3>
+        <ul>
+          <li>In the Quizzes tool, select <strong>New Quiz</strong> and give it a name.</li>
+          <li>Use <strong>Add/Edit Questions</strong> to write new questions or bring in questions from the <strong>Question Library</strong>, where you can reuse them across quizzes.</li>
+          <li>Link the quiz to a <strong>Grade item</strong>, either an existing one or a new one, so its score has a place in the grade book.</li>
+        </ul>
+
+        <h3>Where the Settings Live</h3>
+        <p>The quiz settings are grouped into panels down the side of the quiz editor:</p>
+        <div class="table-wrap"><table class="table">
+          <thead><tr><th scope="col">Panel</th><th scope="col">What you set there</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Availability Dates &amp; Conditions</th><td>Start and end dates, release conditions, a password, and special access for individual learners</td></tr>
+            <tr><th scope="row">Timing &amp; Display</th><td>Time limits, questions per page, and shuffling</td></tr>
+            <tr><th scope="row">Attempts &amp; Completion</th><td>How many attempts learners get and how the overall grade is worked out across attempts</td></tr>
+            <tr><th scope="row">Evaluation &amp; Feedback</th><td>Auto-publishing attempt results, syncing to the grade book, and what learners see after they submit</td></tr>
+          </tbody>
+        </table></div>
+
+        <h3>Try It: Find the Setting</h3>
+        <p>For each setting, choose the panel where you would find it, then check your answers.</p>
+        <div class="card match" id="match">
+            <div class="field match-row" data-answer="attempts"><label for="q-attempts">Number of attempts allowed</label><select class="select" id="q-attempts"><option value="">Choose a panel</option><option value="timing">Timing &amp; Display</option><option value="attempts">Attempts &amp; Completion</option><option value="evaluation">Evaluation &amp; Feedback</option><option value="availability">Availability Dates &amp; Conditions</option></select><span class="match-result" aria-live="polite"></span></div>
+            <div class="field match-row" data-answer="evaluation"><label for="q-auto">Auto-publish attempt results</label><select class="select" id="q-auto"><option value="">Choose a panel</option><option value="timing">Timing &amp; Display</option><option value="attempts">Attempts &amp; Completion</option><option value="evaluation">Evaluation &amp; Feedback</option><option value="availability">Availability Dates &amp; Conditions</option></select><span class="match-result" aria-live="polite"></span></div>
+            <div class="field match-row" data-answer="availability"><label for="q-password">A password to start the quiz</label><select class="select" id="q-password"><option value="">Choose a panel</option><option value="timing">Timing &amp; Display</option><option value="attempts">Attempts &amp; Completion</option><option value="evaluation">Evaluation &amp; Feedback</option><option value="availability">Availability Dates &amp; Conditions</option></select><span class="match-result" aria-live="polite"></span></div>
+            <div class="field match-row" data-answer="timing"><label for="q-shuffle">Shuffle questions</label><select class="select" id="q-shuffle"><option value="">Choose a panel</option><option value="timing">Timing &amp; Display</option><option value="attempts">Attempts &amp; Completion</option><option value="evaluation">Evaluation &amp; Feedback</option><option value="availability">Availability Dates &amp; Conditions</option></select><span class="match-result" aria-live="polite"></span></div>
+            <div class="field match-row" data-answer="evaluation"><label for="q-sync">Synchronize to Grade Book</label><select class="select" id="q-sync"><option value="">Choose a panel</option><option value="timing">Timing &amp; Display</option><option value="attempts">Attempts &amp; Completion</option><option value="evaluation">Evaluation &amp; Feedback</option><option value="availability">Availability Dates &amp; Conditions</option></select><span class="match-result" aria-live="polite"></span></div>
+          <div class="btn-row"><button class="btn btn-secondary" type="button" id="match-check">Check my answers</button></div>
+          <p class="feedback" id="match-feedback" role="status"></p>
+        </div>
+
+        <form class="card check" novalidate data-lesson="3" data-answer="b" data-right="Correct. Auto-publishing results and syncing to the grade book are both in Evaluation & Feedback." data-wrong="Not quite. That panel controls other things. Publishing results and syncing to the grade book are in Evaluation & Feedback.">
+          <h3 class="kc-title">Knowledge Check</h3>
+          <fieldset>
+            <legend>Learners finish a quiz but cannot see their scores, and nothing shows in the grade book. Which panel should you check first?</legend>
+            <div class="choices">
+            <label class="choice"><input type="radio" name="kc-3" value="a" id="kc3-a"> Timing & Display</label>
+            <label class="choice"><input type="radio" name="kc-3" value="b" id="kc3-b"> Evaluation & Feedback</label>
+            <label class="choice"><input type="radio" name="kc-3" value="c" id="kc3-c"> Availability Dates & Conditions</label>
+            </div>
+          </fieldset>
+          <div class="btn-row"><button class="btn btn-secondary" type="submit">Check my answer</button></div>
+          <p class="feedback" role="status"></p>
+        </form>
+      </section>
+      <section class="mlesson" id="l4" aria-labelledby="l4-h">
+        <p class="eyebrow">Lesson 4 of 4 · About 6 minutes</p>
+        <h2 class="lesson-title" id="l4-h">Grades</h2>
+        <p class="lead">With the grade book set up, entering and releasing grades is routine. The care goes into checking before learners can see anything.</p>
+
+        <h3>Three Ways to Enter Grades</h3>
+        <ul>
+          <li><strong>One learner:</strong> open a learner and enter all their grades. Good for a learner who handed everything in late.</li>
+          <li><strong>One grade item:</strong> open an item and enter it for the whole class. Good right after a test.</li>
+          <li><strong>Spreadsheet View:</strong> type numbers straight into a grid. Good for entering a lot of grades at once.</li>
+        </ul>
+
+        <h3>Handle Missing and Excused Work on Purpose</h3>
+        <ul>
+          <li><strong>Exemptions</strong> excuse a learner from an item, so it does not count for or against them.</li>
+          <li><strong>Automatic zeros</strong> can fill in a zero once the due date passes with no submission, if your organization has it turned on.</li>
+          <li><strong>Drop rules</strong> on a category can drop each learner's lowest grade, for example their weakest quiz.</li>
+        </ul>
+
+        <h3>Check, Then Release</h3>
+        <ol class="steps-plain">
+          <li>Look over the final grades in <strong>Enter Grades</strong>, and spot-check a few learners by hand.</li>
+          <li>If you use the adjusted final grade, make any changes now.</li>
+          <li>Release the final grades. If you chose <strong>Automatically release final grade</strong> during setup, learners already see them, so check early.</li>
+        </ol>
+
+        <form class="card check" novalidate data-lesson="4" data-answer="b" data-right="Correct. An exemption takes the quiz out of that learner's calculation only." data-wrong="Not quite. That would affect the learner unfairly, or remove the quiz for everyone. An exemption excuses just this learner.">
+          <h3 class="kc-title">Knowledge Check</h3>
+          <fieldset>
+            <legend>A learner was excused from one quiz because of illness. How should you record it so their grade is fair?</legend>
+            <div class="choices">
+            <label class="choice"><input type="radio" name="kc-4" value="a" id="kc4-a"> Enter a zero</label>
+            <label class="choice"><input type="radio" name="kc-4" value="b" id="kc4-b"> Exempt the learner from that quiz</label>
+            <label class="choice"><input type="radio" name="kc-4" value="c" id="kc4-c"> Delete the quiz from the grade book</label>
+            </div>
+          </fieldset>
+          <div class="btn-row"><button class="btn btn-secondary" type="submit">Check my answer</button></div>
+          <p class="feedback" role="status"></p>
+        </form>
+      </section>
+        <section class="mlesson" id="done" aria-labelledby="done-h">
+          <h2 class="lesson-title" id="done-h">Wrap-Up</h2>
+          <p id="done-text">Finish the four knowledge checks to complete the module.</p>
+          <ul>
+            <li>Set up the grade book first: grading system, final grade, and how to treat ungraded work.</li>
+            <li>Publish a rubric before you try to add it to an assignment.</li>
+            <li>Check Evaluation &amp; Feedback whenever quiz results are not reaching learners or the grade book.</li>
+            <li>Check final grades before release, especially if they release automatically.</li>
+          </ul>
+          <div class="course-foot">
+            <p class="muted small" role="status" id="m-note">Your progress is saved in this browser only.</p>
+            <button class="btn btn-ghost" type="button" id="m-reset">Reset my progress</button>
+          </div>
+          <div class="sources">
+            <p>This is an independent sample built by Jasmine Balley for her portfolio. It is not made or endorsed by D2L. Screen labels follow the Brightspace Community documentation as of November 2026; your organization's version may differ.</p>
+            <p>Sources: <a class="link" href="https://community.d2l.com/brightspace/kb/articles/5327-about-grades" target="_blank" rel="noopener">About Grades</a>, <a class="link" href="https://community.d2l.com/brightspace/kb/articles/5192-grading-system-types" target="_blank" rel="noopener">Grading system types</a>, <a class="link" href="https://community.d2l.com/brightspace/kb/articles/5196-set-up-your-grade-book" target="_blank" rel="noopener">Set up your grade book</a>, <a class="link" href="https://community.d2l.com/brightspace/kb/articles/5786-about-rubrics" target="_blank" rel="noopener">About Rubrics</a>, <a class="link" href="https://community.d2l.com/brightspace/kb/articles/1264-comparing-quiz-creation-experiences" target="_blank" rel="noopener">Comparing quiz creation experiences</a>, <a class="link" href="https://community.d2l.com/brightspace/kb/articles/5235-enter-grades-in-the-grades-tool" target="_blank" rel="noopener">Enter grades in the Grades tool</a>.</p>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+<footer class="site-footer">
+  <p>Jasmine Balley · Instructional design and enablement · Toronto</p>
+  <ul>
+    <li><a class="link link-standalone" href="https://www.linkedin.com/in/jasmine-balley/" target="_blank" rel="noopener">LinkedIn</a></li>
+  </ul>
+</footer>
+  </div></div>
+</div>
+<script src="module.js"></script>
+</body>
+</html>

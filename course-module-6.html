@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Check Your Work | Accessible Learning Basics</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Mulish:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<div class="site">
+  <div class="wf"><div class="wf-inner">
+<header class="site-header">
+  <a class="brand" href="index.html">Jasmine Balley</a>
+  <nav class="site-nav" aria-label="Main">
+    <ul>
+      <li><a class="nav-link" href="index.html">Home</a></li>
+      <li><a class="nav-link" href="portfolio.html" aria-current="page">Portfolio</a></li>
+      <li><a class="nav-link" href="about.html">About</a></li>
+      <li><a class="nav-link" href="index.html#c-5">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+  <div class="course-page">
+    <div class="course-banner"><p class="course-code">ACCS 101 · Professional Development</p><p class="title">Accessible Learning Basics</p><dl class="course-meta"><div><dt>Module</dt><dd>6 of 6</dd></div><div><dt>Estimated Time</dt><dd>20 Minutes</dd></div><div><dt>Instructor</dt><dd>Jasmine Balley</dd></div></dl></div>
+    <nav class="course-nav" aria-label="Course"><ul>
+      <li><a class="nav-link" href="course.html">Course home</a></li><li><a class="nav-link" href="course.html#modules">Modules</a></li><li><a class="nav-link" href="course.html#announcements">Announcements</a></li>
+      <li class="course-back"><a class="btn btn-secondary btn-back" href="portfolio.html">Back to Portfolio</a></li>
+    </ul></nav>
+    <div class="lesson-cols">
+    <aside>
+      <nav class="modnav" aria-labelledby="modnav-h">
+        <h2 class="widget-title" id="modnav-h">Modules</h2>
+        <ol>
+          <li><a href="course-module-1.html" data-modlink="1"><span class="n">1</span><span class="title">Why Accessibility Matters</span><span class="status" data-status>Not started</span></a></li>
+          <li><a href="course-module-2.html" data-modlink="2"><span class="n">2</span><span class="title">Headings and Structure</span><span class="status" data-status>Not started</span></a></li>
+          <li><a href="course-module-3.html" data-modlink="3"><span class="n">3</span><span class="title">Colour and Contrast</span><span class="status" data-status>Not started</span></a></li>
+          <li><a href="course-module-4.html" data-modlink="4"><span class="n">4</span><span class="title">Images and Alt Text</span><span class="status" data-status>Not started</span></a></li>
+          <li><a href="course-module-5.html" data-modlink="5"><span class="n">5</span><span class="title">Captions and Transcripts</span><span class="status" data-status>Not started</span></a></li>
+          <li><a href="course-module-6.html" data-modlink="6" aria-current="page"><span class="n">6</span><span class="title">Check Your Work</span><span class="status" data-status>Not started</span></a></li>
+        </ol>
+      </nav>
+    </aside>
+    <main class="lesson" data-current-module="6">
+      <p class="eyebrow">Module 6 of 6</p>
+      <h1 class="page-title">Check Your Work</h1>
+      <p class="lead">Check every module before launch. Most problems take minutes to find and fix at this stage.</p>
+<h2>Launch Checklist</h2>
+<p>Tick each item as you go. Nothing is saved, so you can reuse the list for every module.</p>
+<div class="choices">
+<label class="choice"><input type="checkbox" id="cl-1"> I can reach and use everything with the keyboard alone</label>
+<label class="choice"><input type="checkbox" id="cl-2"> I can always see which item has keyboard focus</label>
+<label class="choice"><input type="checkbox" id="cl-3"> Headings go in order, with no skipped levels</label>
+<label class="choice"><input type="checkbox" id="cl-4"> Text contrast is at least 4.5:1</label>
+<label class="choice"><input type="checkbox" id="cl-5"> Nothing depends on colour alone</label>
+<label class="choice"><input type="checkbox" id="cl-6"> Every meaningful image has alt text</label>
+<label class="choice"><input type="checkbox" id="cl-7"> Videos have captions that I have reviewed</label>
+<label class="choice"><input type="checkbox" id="cl-8"> At 200% zoom, nothing is cut off or overlapping</label>
+</div>
+<h2>Tools Help, People Confirm</h2>
+<p>Automated checkers are fast and catch common errors such as missing alt text and low contrast. They cannot tell you whether the alt text is useful or whether the reading order makes sense.</p>
+<p>Finish with a keyboard run-through. When you can, ask a learner who uses assistive technology to try the module.</p>
+      <form class="card check" novalidate data-answer="b" data-right="Correct. Checkers catch common errors, but only people can confirm the module works." data-wrong="Not quite. Checkers miss problems such as unhelpful alt text, so test with a keyboard and with people as well.">
+        <h2>Check Your Understanding</h2>
+        <fieldset>
+          <legend>An automated checker reports zero errors. Is the module accessible?</legend>
+          <div class="choices">
+          <label class="choice"><input type="radio" name="check" value="a" id="m6-a"> Yes. Zero errors means it is accessible</label>
+          <label class="choice"><input type="radio" name="check" value="b" id="m6-b"> Not necessarily. Test with a keyboard and with people as well</label>
+          <label class="choice"><input type="radio" name="check" value="c" id="m6-c"> Only if the module has no video</label>
+          </div>
+        </fieldset>
+        <div class="btn-row"><button class="btn btn-secondary" type="submit">Check my answer</button></div>
+        <p class="feedback" role="status"></p>
+      </form>
+      <nav class="pager" aria-label="Module pages">
+        <a class="link link-standalone" href="course-module-5.html">Previous: Captions and Transcripts</a>
+        <a class="btn btn-primary" id="complete" href="course.html">Mark complete and finish</a>
+      </nav>
+    </main>
+    </div>
+  </div>
+  </div></div>
+</div>
+<script src="course.js"></script>
+</body>
+</html>

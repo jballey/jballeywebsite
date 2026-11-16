@@ -1,0 +1,65 @@
+/* Sample e-learning module. Reads only from tokens.css. */
+.mmain { display: grid; gap: var(--space-8); padding-bottom: var(--space-7); min-width: 0; }
+.mlesson { display: grid; gap: var(--space-4); scroll-margin-top: calc(var(--hit-min) + var(--space-7)); border-top: var(--border-width) solid var(--color-border-subtle); padding-top: var(--space-7); min-width: 0; }
+.mlesson.mintro { border-top: 0; padding-top: 0; }
+.mlesson h3 { font-size: var(--text-4); padding-top: var(--space-4); }
+.mlesson ul, .steps-plain { padding-left: var(--space-5); display: grid; gap: var(--space-2); }
+.lesson-title { font-size: var(--text-6); }
+.mlesson .pair { display: grid; gap: var(--space-3); max-width: var(--measure); }
+.mlesson .pair div { display: grid; gap: var(--space-1); border-left: var(--focus-width) solid var(--color-border); padding-left: var(--space-4); }
+.mlesson .pair dt { font-weight: var(--weight-bold); }
+.module-banner { background: var(--color-accent); }
+.module-bar { display: flex; justify-content: flex-end; padding-bottom: var(--space-2); border-bottom: var(--border-width) solid var(--color-border-subtle); }
+.mprog { display: grid; gap: var(--space-2); padding-top: var(--space-3); }
+.kc-title { font-family: var(--font-body); font-size: var(--text-2); font-weight: var(--weight-bold); letter-spacing: var(--tracking-label); color: var(--color-text-muted); padding-top: 0 !important; }
+
+/* Component: Input and Select */
+.field { display: grid; gap: var(--space-2); align-content: start; }
+.field label { font-weight: var(--weight-medium); font-size: var(--text-2); }
+.input, .select {
+  min-height: var(--hit-min); width: 100%;
+  padding-inline: var(--space-3);
+  border: var(--border-width) solid var(--color-border); border-radius: var(--radius-md);
+  background: var(--color-surface); color: var(--color-text);
+  font: inherit;
+  transition: border-color var(--duration-hover) var(--ease);
+}
+.input:hover, .select:hover { border-color: var(--color-text); }
+.input:disabled, .select:disabled { background: var(--color-disabled-bg); color: var(--color-disabled-text); cursor: not-allowed; }
+.input[aria-invalid="true"] { border-color: var(--color-danger); }
+.hint { font-size: var(--text-2); color: var(--color-text-muted); }
+
+/* Calculator */
+.calc { gap: var(--space-5); }
+.calc-inputs { display: grid; gap: var(--space-4) var(--gutter); }
+@container (min-width: 64em) { .calc-inputs { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.calc-out { display: grid; gap: var(--space-4) var(--gutter); grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: var(--border-width) solid var(--color-border-subtle); padding-top: var(--space-4); }
+.calc-out div { display: grid; gap: var(--space-1); }
+.calc-out dt { font-size: var(--text-2); color: var(--color-text-muted); }
+.calc-out dd { font-family: var(--font-display); font-size: var(--text-6); line-height: var(--leading-tight); font-variant-numeric: tabular-nums; }
+
+/* Rubric status */
+.status-row { display: grid; gap: var(--gutter); }
+@container (min-width: 64em) { .status-row { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.badge-on { background: var(--color-accent); color: var(--color-accent-contrast); border-color: var(--color-accent); }
+
+/* Ordering activity */
+.order-list { list-style: none; padding: 0; display: grid; gap: var(--space-2); counter-reset: ord; max-width: none; }
+.order-list li { counter-increment: ord; display: grid; grid-template-columns: var(--space-6) minmax(0, 1fr); gap: var(--space-2) var(--space-3); align-items: center; padding: var(--space-2) var(--space-3); border: var(--border-width) solid var(--color-border-subtle); border-radius: var(--radius-md); background: var(--color-bg); max-width: none; transition: border-color var(--duration-state) var(--ease); }
+.order-list li::before { content: counter(ord); font-family: var(--font-mono); color: var(--color-text-muted); grid-row: span 2; }
+@container (min-width: 48em) { .order-list li { grid-template-columns: var(--space-6) minmax(0, 1fr) auto; } .order-list li::before { grid-row: auto; } }
+.order-list li[data-state="right"] { border-color: var(--color-success); }
+.order-list li[data-state="wrong"] { border-color: var(--color-danger); }
+.order-btns { display: flex; flex-wrap: wrap; gap: var(--space-1); }
+.btn-sm { padding-inline: var(--space-3); font-size: var(--text-2); }
+.btn-ghost:disabled { background: transparent; }
+
+/* Matching activity */
+.match { gap: var(--space-4); }
+.match-row { grid-template-columns: minmax(0, 1fr); }
+@container (min-width: 64em) { .match-row { grid-template-columns: minmax(0, 5fr) minmax(0, 5fr) minmax(0, 2fr); align-items: center; } }
+.match-result { font-size: var(--text-2); font-weight: var(--weight-medium); }
+.match-result[data-state="right"] { color: var(--color-success); }
+.match-result[data-state="wrong"] { color: var(--color-danger); }
+
+.sources { display: grid; gap: var(--space-2); font-size: var(--text-2); color: var(--color-text-muted); border-top: var(--border-width) solid var(--color-border-subtle); padding-top: var(--space-4); }

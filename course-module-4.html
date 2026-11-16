@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Images and Alt Text | Accessible Learning Basics</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Mulish:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<div class="site">
+  <div class="wf"><div class="wf-inner">
+<header class="site-header">
+  <a class="brand" href="index.html">Jasmine Balley</a>
+  <nav class="site-nav" aria-label="Main">
+    <ul>
+      <li><a class="nav-link" href="index.html">Home</a></li>
+      <li><a class="nav-link" href="portfolio.html" aria-current="page">Portfolio</a></li>
+      <li><a class="nav-link" href="about.html">About</a></li>
+      <li><a class="nav-link" href="index.html#c-5">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+  <div class="course-page">
+    <div class="course-banner"><p class="course-code">ACCS 101 · Professional Development</p><p class="title">Accessible Learning Basics</p><dl class="course-meta"><div><dt>Module</dt><dd>4 of 6</dd></div><div><dt>Estimated Time</dt><dd>10 Minutes</dd></div><div><dt>Instructor</dt><dd>Jasmine Balley</dd></div></dl></div>
+    <nav class="course-nav" aria-label="Course"><ul>
+      <li><a class="nav-link" href="course.html">Course home</a></li><li><a class="nav-link" href="course.html#modules">Modules</a></li><li><a class="nav-link" href="course.html#announcements">Announcements</a></li>
+      <li class="course-back"><a class="btn btn-secondary btn-back" href="portfolio.html">Back to Portfolio</a></li>
+    </ul></nav>
+    <div class="lesson-cols">
+    <aside>
+      <nav class="modnav" aria-labelledby="modnav-h">
+        <h2 class="widget-title" id="modnav-h">Modules</h2>
+        <ol>
+          <li><a href="course-module-1.html" data-modlink="1"><span class="n">1</span><span class="title">Why Accessibility Matters</span><span class="status" data-status>Not started</span></a></li>
+          <li><a href="course-module-2.html" data-modlink="2"><span class="n">2</span><span class="title">Headings and Structure</span><span class="status" data-status>Not started</span></a></li>
+          <li><a href="course-module-3.html" data-modlink="3"><span class="n">3</span><span class="title">Colour and Contrast</span><span class="status" data-status>Not started</span></a></li>
+          <li><a href="course-module-4.html" data-modlink="4" aria-current="page"><span class="n">4</span><span class="title">Images and Alt Text</span><span class="status" data-status>Not started</span></a></li>
+          <li><a href="course-module-5.html" data-modlink="5"><span class="n">5</span><span class="title">Captions and Transcripts</span><span class="status" data-status>Not started</span></a></li>
+          <li><a href="course-module-6.html" data-modlink="6"><span class="n">6</span><span class="title">Check Your Work</span><span class="status" data-status>Not started</span></a></li>
+        </ol>
+      </nav>
+    </aside>
+    <main class="lesson" data-current-module="4">
+      <p class="eyebrow">Module 4 of 6</p>
+      <h1 class="page-title">Images and Alt Text</h1>
+      <p class="lead">Alt text is a short written stand-in for an image. Screen readers read it aloud, and it shows when the image fails to load.</p>
+<h2>Describe the Purpose</h2>
+<p>Ask what the image is doing in the lesson, then write that.</p>
+<ul><li>Keep it short, usually one sentence.</li><li>Leave out phrases such as image of or picture of. The screen reader already announces an image.</li><li>If the image contains text, include that text.</li></ul>
+<h2>Alt Text, Before and After</h2>
+<dl class="pair"><div><dt>Weak</dt><dd>Screenshot.</dd></div><div><dt>Better</dt><dd>The course homepage, with the Continue button highlighted.</dd></div></dl>
+<h2>Decorative Images</h2>
+<p>Borders, dividers and background textures add nothing to the lesson. Give them empty alt text so screen readers skip them.</p>
+<h2>Charts and Diagrams</h2>
+<p>State the main point in the text beside the chart. The alt text can then be brief, such as: Bar chart of completion rates, described below.</p>
+      <form class="card check" novalidate data-answer="b" data-right="Correct. Decorative images get empty alt text." data-wrong="Not quite. The border adds nothing to the lesson, so give it empty alt text and screen readers will skip it.">
+        <h2>Check Your Understanding</h2>
+        <fieldset>
+          <legend>A decorative border image sits at the top of your module. What alt text should it have?</legend>
+          <div class="choices">
+          <label class="choice"><input type="radio" name="check" value="a" id="m4-a"> Decorative border image at the top of the module</label>
+          <label class="choice"><input type="radio" name="check" value="b" id="m4-b"> Empty alt text, so screen readers skip it</label>
+          <label class="choice"><input type="radio" name="check" value="c" id="m4-c"> The file name</label>
+          </div>
+        </fieldset>
+        <div class="btn-row"><button class="btn btn-secondary" type="submit">Check my answer</button></div>
+        <p class="feedback" role="status"></p>
+      </form>
+      <nav class="pager" aria-label="Module pages">
+        <a class="link link-standalone" href="course-module-3.html">Previous: Colour and Contrast</a>
+        <a class="btn btn-primary" id="complete" href="course-module-5.html">Mark complete and continue</a>
+      </nav>
+    </main>
+    </div>
+  </div>
+  </div></div>
+</div>
+<script src="course.js"></script>
+</body>
+</html>
