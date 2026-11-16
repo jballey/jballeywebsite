@@ -167,6 +167,34 @@ a.card:hover, .card:has(a):hover { border-color: var(--color-border); box-shadow
 .toc .num { grid-column: 3; grid-row: 1; font-family: var(--font-mono); color: var(--color-text-muted); font-variant-numeric: tabular-nums; }
 .toc a:hover { background: var(--color-surface-hover); }
 .toc a:active { background: var(--color-surface-sunken); }
+.toc a[aria-current] { background: var(--color-surface-sunken); font-weight: var(--weight-bold); }
+
+/* Chapters on phones: the list moves into a side panel, opened from a tab on the right edge */
+.g12 > aside { display: none; }
+@container (min-width: 48em) { .g12 > aside { display: block; } }
+.toc-tab {
+  position: fixed; right: 0; top: 50%; transform: translateY(-50%); z-index: var(--z-sticky);
+  writing-mode: vertical-rl; min-width: var(--hit-min); min-height: calc(var(--hit-min) * 2);
+  padding: var(--space-4) var(--space-3); padding-right: calc(var(--space-3) + env(safe-area-inset-right, 0px));
+  border: 0; border-radius: var(--radius-lg) 0 0 var(--radius-lg);
+  background: var(--color-accent); color: var(--color-accent-contrast); box-shadow: var(--shadow-1);
+  font-family: var(--font-body); font-size: var(--text-2); font-weight: var(--weight-bold); letter-spacing: var(--tracking-label);
+  cursor: pointer; transition: background var(--duration-hover) var(--ease);
+}
+.toc-tab:hover { background: var(--color-accent-hover); }
+.toc-tab:active { background: var(--color-accent-active); }
+.toc-tab:focus-visible { outline: var(--focus-width) solid var(--color-focus); outline-offset: var(--focus-width); }
+.toc-drawer {
+  position: fixed; inset: 0 0 0 auto; margin: 0; width: 80%; max-width: var(--measure); height: 100%; max-height: 100%;
+  border: 0; padding: calc(var(--space-6) + env(safe-area-inset-top, 0px)) calc(var(--space-4) + env(safe-area-inset-right, 0px)) var(--space-6) var(--space-4);
+  background: var(--color-surface); color: var(--color-text); box-shadow: var(--shadow-1); overflow-y: auto;
+}
+.toc-drawer[open] { animation: toc-in var(--duration-state) var(--ease); }
+.toc-drawer::backdrop { background: var(--color-scrim); }
+@keyframes toc-in { from { transform: translateX(100%); } }
+.toc-drawer-head { display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); padding-bottom: var(--space-4); }
+.toc-drawer-head h2 { font-family: var(--font-display); font-weight: var(--display-weight); font-size: var(--text-5); }
+.toc-drawer .toc { padding-block: 0; position: static; }
 
 /* Chapters */
 .chapter { display: grid; gap: var(--space-5); padding-block: var(--space-8); scroll-margin-top: var(--space-5); position: relative; border-top: var(--border-width) solid var(--color-border-subtle); }
